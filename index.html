@@ -18,9 +18,11 @@
 <body>
     <!-- start header -->
     <div class="header">
+        <div class="scroller"> </div>
         <div class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="">
+                <img class="none" src="images/logos.png" alt="">
             </div>
             <div class="links">
                 <div class="menu">
@@ -30,7 +32,7 @@
                 </div>
                 <ul>
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Services" id="#Services">Services</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Pricing">Pricing</a></li>
@@ -127,12 +129,12 @@
             <div class="box">
                 <div class="text">
                     <h4>Our Design Comes With...</h4>
-                    <ul>
+                        <ul>
                         <li>Responsive Design</li>
                         <li>Modern And Clean Design</li>
-                        <li>Modern And Clean Design</li>
+                        <li>Creative Ideas</li>
                         <li>Browser Friendly</li>
-                    </ul>
+                        </ul>
                 </div>
             </div>
         </div>
@@ -237,65 +239,98 @@
      <!-- end About Us -->
      <!-- start stats -->
       <div class="stats">
-        <div class="container">
-            <div class="box">
-                <i class="fas fa-mug-hot"></i>
-                <div class="number">
-                    1.236
-                </div>
-                <p>Coffee Drinks</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-mug-hot"></i>
-                <div class="number">
-                    1.236
-                </div>
-                <p>Coffee Drinks</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-mug-hot"></i>
-                <div class="number">
-                    1.236
-                </div>
-                <p>Coffee Drinks</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-mug-hot"></i>
-                <div class="number">
-                    1.236
-                </div>
-                <p>Coffee Drinks</p>
-            </div>
-        </div>
+<div class="container">
+    <div class="box">
+        <i class="fas fa-mug-hot"></i>
+        <div class="number">1,236</div>
+        <p>Coffee Drinks</p>
+    </div>
+    <div class="box">
+        <i class="fas fa-briefcase"></i>
+        <div class="number">256</div>
+        <p>Completed Projects</p>
+    </div>
+    <div class="box">
+        <i class="fas fa-users"></i>
+        <div class="number">1,743</div>
+        <p>Happy Clients</p>
+    </div>
+    <div class="box">
+        <i class="fas fa-award"></i>
+        <div class="number">17</div>
+        <p>Awards Won</p>
+    </div>
+</div>
+
       </div>
      <!-- end stats -->
      <!-- start skill -->
       <div class="skill">
         <div class="container">
-            <div class="box">
+            <div class="box Test">
                 <div class="top">
                     <h3>Testimonials</h3>
                     <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
                 </div>
-                <div class="person">
-                    <img src="images/skills-01.jpg" alt="">
-                    <div class="text">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
-                        <p>John Doe, CEO</p>
+                <div class="colection">
+                    <div class="rev hidden">
+                    <div class="person">
+                        <img src="images/skills-01.jpg" alt="">
+                        <div class="text">
+                        "Working with this team was a wonderful experience. They delivered everything on time with great quality."
+                        <p>Michael Brown, Developer</p>
+                        </div>
                     </div>
-                </div>
-                <div class="person">
-                    <img src="images/skills-02.jpg." alt="">
-                    <div class="text">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
-                        <p>John Doe, CEO</p>
+                    <div class="person">
+                        <img src="images/skills-02.jpg" alt="">
+                        <div class="text">
+                        "Professional and creative solutions! I’m really impressed by their attention to detail."
+                        <p>Sarah Johnson, Designer</p>
+                        </div>
                     </div>
+                    </div>
+
+                    <div class="rev hidden">
+                    <div class="person">
+                        <img src="images/skills-03.jpg" alt="">
+                        <div class="text">
+                        "Their support team is always responsive and helpful. I highly recommend their services."
+                        <p>David Miller, Project Manager</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="images/skills-04.jpg" alt="">
+                        <div class="text">
+                        "Fantastic experience from start to finish. The results exceeded our expectations."
+                        <p>Emma Wilson, Entrepreneur</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="rev hidden">
+                    <div class="person">
+                        <img src="images/skills-05.jpg" alt="">
+                        <div class="text">
+                        "I loved how smooth the process was. They truly cared about our goals and vision."
+                        <p>Chris Anderson, Marketing Lead</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="images/skills-06.jpg" alt="">
+                        <div class="text">
+                        "The team is innovative and reliable. We’re excited to continue working with them."
+                        <p>Laura Smith, CEO</p>
+                        </div>
+                    </div>
+                    </div>
+
+                        <ul>
+                            <li class="active"></li>
+                            <li ></li>
+                            <li></li>
+                        </ul>
+                    
                 </div>
-                <ul>
-                    <li></li>
-                    <li class="active"></li>
-                    <li></li>
-                </ul>
             </div>
             <div class="box">
                 <div class="top">
@@ -475,6 +510,7 @@
       </div>
      <!-- end fotter -->
     <script src="main.js/2.js">
+
     </script>
 </body>
 </html>
