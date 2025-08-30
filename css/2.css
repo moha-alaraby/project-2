@@ -104,6 +104,9 @@ body{
 .header .container .logo img{
     height: 40px;
 }
+.header .container .logo .none{
+    display: none;
+}
 .header .container .links{
     color: #fff;
     display: flex;
@@ -119,9 +122,7 @@ body{
 .header .container .links .menu{
     position: relative;
 }
-.header .container .links .menu:hover + ul{
-    display: block;
-}
+
 .header .container .links .menu span{
     width: 20px;
     height: 3px;
@@ -146,8 +147,22 @@ body{
     color:var(--main-color);
     
 }
+.scroller{
+background: linear-gradient(90deg, #7dbeb8, #10cab7);  width: 0;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
 /* small */
 @media (max-width:768px) {
+    .header .container .logo img{
+    display: none;
+    }
+    .header .container .logo .none{
+    display: block;
+    }
     .header .container .links .menu span{
         display: block;
     }
@@ -165,6 +180,9 @@ body{
         padding: 15px;
         border-bottom: 1px solid black;
     }
+    .header .container .links .active{
+    display: block;
+}
 }
 .header .container .links .serch{
     width: 41px;
@@ -180,6 +198,23 @@ body{
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
+}
+.header .del{
+    width:0 !important;  
+    pointer-events: none;
+}
+.del i{
+        right: -27px;
+        color: #777;
+}
+.inpSerch{
+    padding-left: 35px;
+    height: 100%;
+    font-size: 25px;
+    max-width: 165px;
+    &:focus{
+        outline: none;
+    }
 }
 /* end header */
 /* start landing */
@@ -274,7 +309,7 @@ font-size: 25px;
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.01);
     top: 20%;
     left: 10%;
     color: #FFF;
@@ -650,6 +685,8 @@ font-size: 25px;
 }
 .skill .box{
     flex-basis: 45%;
+    margin-bottom: 50px;
+    position: relative;
 }
 .skill .box .top{
     text-align: center;
@@ -660,6 +697,7 @@ font-size: 25px;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .skill .box .top p{
     color: #777;
@@ -690,8 +728,7 @@ font-size: 25px;
 }
 
 .skill .box{
-    margin-bottom: 50px;
-    position: relative;
+
 }
 .skill .box .slide{ 
     margin-bottom: 35px;
@@ -733,6 +770,9 @@ font-size: 25px;
     right: -7px;
     border: solid 7px black;
     border-color: #b3a3a3 transparent transparent;
+}
+.skill .hidden{
+    display: none;
 }
 /* medume */
 @media (max-width:992px){
@@ -1045,6 +1085,22 @@ font-size: 25px;
 .contact-us .content .text address{
     line-height: 2;
     color: #777;
+}
+@media (max-width:500px) {
+    .contact-us .content form {
+    width: 100%;
+}
+.contact-us .content form input[type="submit"] {
+    bottom: -52px;
+}
+.contact-us .content {
+    flex-direction: column;
+}
+.contact-us .content .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
 }
 /* end contact us */
 /* start fotter*/
